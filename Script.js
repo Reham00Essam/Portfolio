@@ -107,11 +107,11 @@ const scrollTop = document.querySelectorAll(".scroll-Top");
 scrollTop.forEach((el) => observer.observe(el));
 
  // وظيفة لإظهار الفقرة
-        function showParagraph(event) {
-            event.preventDefault(); // منع السلوك الافتراضي للرابط
-            const paragraph = document.getElementById('hidden-paragraph');
-            paragraph.style.display = 'block'; // إظهار الفقرة
-        }
+ function showParagraph(event) {
+    event.preventDefault(); // منع السلوك الافتراضي للرابط
+    const paragraph = document.getElementById('hidden-paragraph');
+    paragraph.style.display = 'block'; // إظهار الفقرة
+}
 
 //contact
 document.getElementById('sendToWhatsApp').addEventListener('click', function (event) {

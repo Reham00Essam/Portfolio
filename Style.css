@@ -223,6 +223,32 @@ section {
     color: var(--hover-color);
 }
 
+
+.btn-box .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid var(--hover-color);
+}
+
+.btn:hover {
+    color: var(--hover-color);
+}
+
 .btn::before {
     content: "";
     position: absolute;
@@ -239,13 +265,6 @@ section {
     width: 100%;
 }
 
- /* لتنسيق الفقرة المخفية */
-        .hidden-paragraph {
-            display: none;
-            margin-top: 15px;
-            font-size: 16px;
-            color: #333;
-        }
 .btn:nth-child(2) {
     background: var(--bg-color);
     color: var(--hover-color);
@@ -310,7 +329,6 @@ section {
 
 .home-image {
     position: relative;
-    margin-top:40px;
 }
 
 .img-box {
@@ -325,14 +343,14 @@ section {
     /* لجعل الصورة تملأ الحاوية */
     object-fit: cover;
     height: auto;
-    margin-top: -20px;
+    margin-top: 40px;
     /* رفع الصورة لأعلى بمقدار 20px */
 
 }
 
 .liquid-shape {
     position: absolute;
-    top: -20px;
+    top: 20px;
     /* رفع العنصر لأعلى بمقدار 20px */
     left: 0;
     width: 100%;
